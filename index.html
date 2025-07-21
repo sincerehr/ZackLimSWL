@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zack Lim - Digital Contact Card</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="app-icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="app-icon.png" />
+  <meta name="theme-color" content="#b59148" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 2em 1em;
+      color: #333;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 2em;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .logo {
+      max-width: 180px;
+      margin-bottom: 1.5em;
+    }
+    .top-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2em;
+      flex-wrap: wrap;
+      margin-bottom: 2em;
+    }
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #b59148;
+    }
+    .qr-code {
+      width: 140px;
+      height: 140px;
+      border: 2px solid #ddd;
+      padding: 8px;
+      background: #fff;
+    }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin: 0.5em 0 0.2em;
+    }
+    .title {
+      font-family: 'Playfair Display', serif;
+      font-size: 16px;
+      color: #444;
+      line-height: 1.6;
+      margin-bottom: 1.5em;
+    }
+    .button {
+      background-color: #b59148;
+      color: #fff;
+      font-family: 'Playfair Display', serif;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+      display: inline-block;
+      margin-bottom: 1.2em;
+    }
+    .button:hover {
+      background-color: #a07f40;
+    }
+    .social-links {
+      margin-top: 1.5em;
+    }
+    .social-links a {
+      margin: 0 8px;
+      text-decoration: none;
+    }
+    .social-links img {
+      width: 26px;
+      height: 26px;
+      vertical-align: middle;
+    }
+@media (max-width: 600px) {
+  .top-section {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1em;
+  }
+
+  .profile-pic, .qr-code {
+    width: 120px;
+    height: 120px;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Sincere Watch Logo" class="logo">
+
+    <div class="top-section">
+      <img src="profile.png" alt="Employee Photo" class="profile-pic">
+      <img src="qr.png" alt="QR Code" class="qr-code">
+    </div>
+
+    <h1>Zack Lim</h1>
+    <p class="title">Assistant Boutique Manager<br>Sincere Watch Limited</p>
+
+    <a class="button" href="ZackLim.vcf" download>Download Contact</a>
+
+    <div class="social-links">
+      <a href="https://sincerewatch.com/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/domain.png" alt="Website" /></a>
+      <a href="https://www.instagram.com/sincerefinewatches/" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/instagram-new.png" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/sincerefinewatches" target="_blank"><img src="https://img.icons8.com/ios-filled/50/000000/facebook-new.png" alt="Facebook" /></a>
+    </div>
+  </div>
+</body>
+</html>
