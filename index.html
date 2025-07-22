@@ -36,7 +36,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 2em;
+      gap: 1em;
       flex-wrap: wrap;
       margin-bottom: 2em;
     }
@@ -48,11 +48,8 @@
       border: 3px solid #b59148;
     }
     .qr-code {
-      width: 140px;
-      height: 140px;
-      border: 2px solid #ddd;
-      padding: 8px;
-      background: #fff;
+      width: 150px;
+      height: 150px;
     }
     h1 {
       font-family: 'Playfair Display', serif;
@@ -95,13 +92,18 @@
 @media (max-width: 600px) {
   .top-section {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     gap: 1em;
   }
 
-  .profile-pic, .qr-code {
+ .profile-pic, {
     width: 120px;
     height: 120px;
+  }
+
+ .qr-code {
+    width: 130px;
+    height: 130px;
   }
 }
   </style>
